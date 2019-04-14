@@ -1,3 +1,9 @@
+## Instructions
+1. Make sure MySQL is installed on your system and MySQL Server is running
+2. MySQL has a `root` user with no password
+3. You have the Python package installed
+4. You are running on python3 
+
 ## Starting MySQL on Mac
 1. `/usr/local/bin/mysql.server start`
 2. `mysql -u root`
@@ -13,3 +19,4 @@
 
 ## References
 1. <https://www.datacamp.com/community/tutorials/mysql-python#IMySQL>
+2. <https://stackoverflow.com/questions/2191699/find-an-element-in-a-list-of-tuples>
