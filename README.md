@@ -3,6 +3,7 @@
 2. MySQL has a `root` user with no password
 3. You have the Python package installed
 4. You are running on python3 
+5. **`mysql < dataCreation.sql`**
 
 ## Starting MySQL on Mac
 1. `/usr/local/bin/mysql.server start`
@@ -20,3 +21,5 @@
 ## References
 1. <https://www.datacamp.com/community/tutorials/mysql-python#IMySQL>
 2. <https://stackoverflow.com/questions/2191699/find-an-element-in-a-list-of-tuples>
+3. <https://dev.mysql.com/doc/refman/8.0/en/mysql-batch-commands.html>
+4. <http://www.mysqltutorial.org/mysql-foreign-key/>

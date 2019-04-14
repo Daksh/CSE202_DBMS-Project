@@ -17,11 +17,11 @@ def createDB():
 
 	cursor.execute("SHOW DATABASES")
 	databases = cursor.fetchall()
-	if [item for item in databases if 'College' in item] == []:
-		cursor.execute("CREATE DATABASE College")
-		print('"College" Database successfully created :)')
+	if [item for item in databases if 'college' in item] == []:
+		cursor.execute("CREATE DATABASE college")
+		print('"college" Database successfully created :)')
 	else:
-		print('"College" Database already exists!')
+		print('"college" Database already exists!')
 	input("Press Enter to continue...")
 
 def createTables():
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 	choice = 1
 	while choice != 0:
 		clear()
-		print('1. Create the Database College') 
+		print('1. Create the "college" Database') 
 		print('2. Create all the Relations(Tables)')
 		print('3. Add Data to the Tables')
 		print('0. Exit')
