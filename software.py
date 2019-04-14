@@ -61,10 +61,17 @@ def createTables():
 	adding_Enrollments_table="CREATE TABLE `college`.`Enrollments` ( `Student_RollNumber` INT(10) NOT NULL , `Offering_Year` INT(5) NOT NULL , `Offering_Semester` INT(10) NOT NULL , `Course_Number` INT(10) NOT NULL , `Grade` VARCHAR(10) NOT NULL , `Student_Semester` INT(10) NOT NULL , PRIMARY KEY (`Student_RollNumber`, `Offering_Year`, `Offering_Semester`, `Course_Number`)) ENGINE = InnoDB;"
 	cursor.execute(adding_Enrollments_table)
 	print('"Enrollments" table successfully created :)')
-	
+
 
 def addData():
-	pass
+	db = mysql.connect(
+		host = "localhost",
+		user = "root"
+	)
+	# Cursor is used to execute MySQL Commands
+	cursor = db.cursor()
+
+	
 
 if __name__ == '__main__':
 	choice = 1
