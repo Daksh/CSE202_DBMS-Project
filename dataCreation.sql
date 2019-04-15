@@ -364,6 +364,14 @@ INSERT INTO `offering`(
     `courseNumber`,
     `instructorID`
 )
+VALUES('2018', '3', 'CSE232', '1002');
+
+INSERT INTO `offering`(
+    `year`,
+    `semester`,
+    `courseNumber`,
+    `instructorID`
+)
 VALUES('2019', 'Monsoon', 'CSE100', '1001');
 
 INSERT INTO `offering`(
