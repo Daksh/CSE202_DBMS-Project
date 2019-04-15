@@ -53,7 +53,7 @@ CREATE TABLE enrollments(
 );
 
 CREATE TABLE department(
-	num CHAR(6) NOT NULL,
+	num CHAR(3) NOT NULL,
 	name VARCHAR(100) NOT NULL,
 	hodID INT(4) NOT NULL,
 	FOREIGN KEY (hodID) REFERENCES instructor(ID) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -61,9 +61,48 @@ CREATE TABLE department(
 );
 
 CREATE TABLE departmentComposition( 
-	departmentNumber CHAR(6) NOT NULL,
+	departmentNumber CHAR(3) NOT NULL,
 	instructorID INT(4) NOT NULL,
 	FOREIGN KEY (departmentNumber) REFERENCES department(num) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (instructorID) REFERENCES instructor(ID) ON DELETE CASCADE ON UPDATE CASCADE,
 	PRIMARY KEY (departmentNumber, instructorID)
 ); 
+
+-->Adding values to COURSES
+
+INSERT INTO `course`(`num`, `name`, `credits`)
+VALUES(
+	'CSE100', 
+	'Computer Networks', 
+	'4'
+);
+
+INSERT INTO `course`(`num`, `name`, `credits`)
+VALUES(
+    'CSE232',
+    'Analysis and Design of Algorithms ',
+    '4'
+);
+
+INSERT INTO `course`(`num`, `name`, `credits`)
+VALUES(
+    'MTH100',
+    'Linear Algebra',
+    '4'
+);
+
+INSERT INTO `course`(`num`, `name`, `credits`)
+VALUES(
+    'CSB130',
+    'Introduction to Quantitative Biology',
+    '4'
+);
+
+INSERT INTO `course`(`num`, `name`, `credits`)
+VALUES(
+    'SSH104',
+    'Critical Thinking',
+    '4'
+);
+
+-->Adding values to COURSES
