@@ -32,7 +32,7 @@ ALTER TABLE instructor AUTO_INCREMENT=1001;
 
 CREATE TABLE offering( 
 	year INT(4) NOT NULL,
-	semester INT(1) NOT NULL,
+	semester VARCHAR(20) NOT NULL,
 	courseNumber CHAR(6) NOT NULL,
 	instructorID INT(4) NOT NULL,
 	FOREIGN KEY (courseNumber) REFERENCES course(Num) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -42,7 +42,7 @@ CREATE TABLE offering(
 
 CREATE TABLE enrollments(
 	studentRollNumber INT(8) NOT NULL,
-	offeringSemester INT(1) NOT NULL,
+	offeringSemester VARCHAR(20) NOT NULL,
 	courseNumber CHAR(6) NOT NULL,
 	grade DECIMAL(4,2) NOT NULL,
 	studentSemester INT(1) NOT NULL,
