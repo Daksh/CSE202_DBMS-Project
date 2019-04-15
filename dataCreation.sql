@@ -68,7 +68,7 @@ CREATE TABLE departmentComposition(
 	PRIMARY KEY (departmentNumber, instructorID)
 ); 
 
--->Adding values to COURSES
+/*Adding values to  courses */
 
 INSERT INTO `course`(`num`, `name`, `credits`)
 VALUES(
@@ -105,7 +105,7 @@ VALUES(
     '4'
 );
 
--->Adding values to instructor
+/*Adding values to  instructor */
 
 INSERT INTO `instructor` (`ID`, `name`, `salary`, `gender`) 
 VALUES (
@@ -131,7 +131,7 @@ VALUES (
 	'M'
 );
 
--->Adding values to Student
+/*Adding values to  student */
 
 INSERT INTO `student`(
     `rollNumber`,
@@ -179,3 +179,62 @@ VALUES(
     'CSE'
 );
 
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2017110',
+    'sudhanshu17110@iiitd.ac.in',
+    'IIITD Boys hostel',
+    'B+',
+    'M',
+    '8826215977',
+    '7.5',
+    'Sudhanshu',
+    'CSE'
+);
+
+/*Adding values to  department*/
+
+
+INSERT INTO `department`(`num`, `name`, `hodID`)
+VALUES(
+	'CSE', 
+	'Computer Science', 
+	'1001'
+);
+
+INSERT INTO `department`(`num`, `name`, `hodID`)
+VALUES(
+    'SSH',
+    'Social Science and Humanities',
+    '1003'
+);
+
+/*Adding values to  departmentcomposition */
+
+INSERT INTO `departmentcomposition`(`departmentNumber`, `instructorID`)
+VALUES(
+	'CSE', 
+	'1001'
+);
+
+INSERT INTO `departmentcomposition`(`departmentNumber`, `instructorID`)
+VALUES(
+	'SSH', 
+	'1003'
+);
+
+INSERT INTO `departmentcomposition`(`departmentNumber`, `instructorID`)
+VALUES(
+	'CSE', 
+	'1002'
+);
