@@ -238,3 +238,42 @@ VALUES(
 	'CSE', 
 	'1002'
 );
+
+/*Adding values to  offering */
+
+INSERT INTO `offering`(
+    `year`,
+    `semester`,
+    `courseNumber`,
+    `instructorID`
+)
+VALUES('2019', 'Monsoon', 'CSE100', '1001');
+
+INSERT INTO `offering`(
+    `year`,
+    `semester`,
+    `courseNumber`,
+    `instructorID`
+)
+VALUES('2019', 'Winter', 'SSH104', '1003');
+
+/*Adding values to  enrollments */
+
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2017110', 'Winter', 'CSE100', '9', '4');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2017111', 'Winter', 'SSH104', '10', '2');
