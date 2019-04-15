@@ -1,3 +1,5 @@
+# Proof of Concept
+# A sample script to show how to use Python with MySQL
 import mysql.connector as mysql
 from os import system, name 
 
