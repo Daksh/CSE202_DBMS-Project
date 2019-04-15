@@ -102,7 +102,7 @@ INSERT INTO `course`(`num`, `name`, `credits`)
 VALUES(
     'SSH104',
     'Critical Thinking',
-    '4'
+    '2'
 );
 
 /*Adding values to  instructor */
@@ -129,6 +129,13 @@ VALUES (
 	'Raj Ayyar', 
 	'1300000', 
 	'M'
+);
+
+INSERT INTO `instructor`(`ID`, `name`, `salary`, `gender`)
+VALUES(NULL, 
+	'Simran Malhi', 
+	'2000000', 
+	'F'
 );
 
 /*Adding values to  student */
@@ -202,6 +209,110 @@ VALUES(
     'CSE'
 );
 
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2019110',
+    'akshita19110@iiitd.ac.in',
+    'IIITD Boys hostel',
+    'B+',
+    'F',
+    '8822215977',
+    '6.5',
+    'akshita',
+    'CSE'
+);
+
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2019121',
+    'aakanksha19121@iiitd.ac.in',
+    'IIITD Girls hostel',
+    'B+',
+    'F',
+    '8355837469',
+    '8.5',
+    'aakanksha',
+    'ECE'
+);
+
+
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2018310',
+    'shruti18310@iiitd.ac.in',
+    'IIITD Girls hostel',
+    'O+',
+    'F',
+    '9273568467',
+    '7.2',
+    'shruti',
+    'CSB'
+);
+
+
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2017210',
+    'rohan17210@iiitd.ac.in',
+    'IIITD Boys hostel',
+    'B+',
+    'M',
+    '8263784567',
+    '5.5',
+    'rohan',
+    'CSE'
+);
+
+
+
+
+
+
+
 /*Adding values to  department*/
 
 
@@ -239,6 +350,12 @@ VALUES(
 	'1002'
 );
 
+INSERT INTO `departmentcomposition`(`departmentNumber`, `instructorID`)
+VALUES(
+	'CSE', 
+	'1004'
+);
+
 /*Adding values to  offering */
 
 INSERT INTO `offering`(
@@ -257,8 +374,42 @@ INSERT INTO `offering`(
 )
 VALUES('2019', 'Winter', 'SSH104', '1003');
 
+INSERT INTO `offering`(
+    `year`,
+    `semester`,
+    `courseNumber`,
+    `instructorID`
+)
+VALUES('2019', 'Summer', 'CSB130', '1004');
+
 /*Adding values to  enrollments */
 
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2019110', 'Summer', 'CSB130', '9', '1');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2017210', 'Summer', 'CSB130', '10', '3');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2017110', 'Summer', 'CSB130', '9', '3');
 
 INSERT INTO `enrollments`(
     `studentRollNumber`,
@@ -277,3 +428,42 @@ INSERT INTO `enrollments`(
     `studentSemester`
 )
 VALUES('2017111', 'Winter', 'SSH104', '10', '2');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2019121', 'Winter', 'SSH104', '9', '4');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2019110', 'Winter', 'SSH104', '8', '2');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2018310', 'Monsoon', 'CSE100', '9', '3');
+
+INSERT INTO `enrollments`(
+    `studentRollNumber`,
+    `offeringSemester`,
+    `courseNumber`,
+    `grade`,
+    `studentSemester`
+)
+VALUES('2017210', 'Monsoon', 'CSE100', '8', '1');
+
+
+
