@@ -105,4 +105,77 @@ VALUES(
     '4'
 );
 
--->Adding values to COURSES
+-->Adding values to instructor
+
+INSERT INTO `instructor` (`ID`, `name`, `salary`, `gender`) 
+VALUES (
+	NULL, 
+	'Vikram Goyal', 
+	'3000000', 
+	'M'
+);
+
+INSERT INTO `instructor` (`ID`, `name`, `salary`, `gender`) 
+VALUES (
+	NULL, 
+	'Debajyoti Bera', 
+	'6000000', 
+	'M'
+);
+
+INSERT INTO `instructor` (`ID`, `name`, `salary`, `gender`) 
+VALUES (
+	NULL, 
+	'Raj Ayyar', 
+	'1300000', 
+	'M'
+);
+
+-->Adding values to Student
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2017111',
+    'Vinayak17111@iiitd.ac.in',
+    'IIITD Boys hostel',
+    'O+',
+    'M',
+    '8926215277',
+    '8.4',
+    'Vinayak',
+    'CSE'
+);
+
+INSERT INTO `student`(
+    `rollNumber`,
+    `email`,
+    `address`,
+    `bloodGroup`,
+    `gender`,
+    `phone`,
+    `cgpa`,
+    `name`,
+    `stream`
+)
+VALUES(
+    '2017030',
+    'chirag17030@iiitd.ac.in',
+    'IIITD Boys hostel',
+    'O-',
+    'M',
+    '9816357465',
+    '9.5',
+    'Chirag',
+    'CSE'
+);
+
