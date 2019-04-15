@@ -67,3 +67,5 @@ CREATE TABLE departmentComposition(
 	FOREIGN KEY (instructorID) REFERENCES instructor(ID) ON DELETE CASCADE ON UPDATE CASCADE,
 	PRIMARY KEY (departmentNumber, instructorID)
 ); 
+
+INSERT INTO student(rollNumber, email, address, bloodGroup, gender, phone, cgpa, name, stream) VALUES (value_1,value_2,...);
